@@ -1,0 +1,199 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff80b5, #ffb3d9); /* Gradasi pink */
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #ff80b5, #ffb3d9); /* Gradasi header pink */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: white; /* Warna teks putih agar kontras dengan latar belakang */
+}
+
+header p {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Styling untuk bagian input */
+.input-section, .execution-time {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+    background: linear-gradient(135deg, #f8f8f8, #f1f1f1); /* Gradasi pada textarea */
+    transition: background-color 0.3s, border 0.3s;
+}
+
+textarea:focus {
+    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* Fokus gradasi */
+    outline: none;
+    border: 1px solid #ff80b5; /* Highlight border dengan warna pink */
+}
+
+button {
+    background: linear-gradient(135deg, #ff80b5, #ffb3d9); /* Gradasi pada tombol */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff66a3, #ff80b5); /* Gradasi lebih gelap saat hover */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Styling untuk bagian waktu eksekusi */
+.execution-time {
+    background: linear-gradient(135deg, #ffb3d9, #ff80b5); /* Gradasi waktu eksekusi */
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.execution-time p {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling untuk bagian hasil */
+.results-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.table-wrapper {
+    flex: 1;
+    background: linear-gradient(135deg, #f9f9f9, #f1f1f1); /* Gradasi lembut untuk wrapper tabel */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(135deg, #ff80b5, #ffb3d9); /* Gradasi pada header tabel */
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+table td,
+table th {
+    transition: background-color 0.3s;
+}
+
+.execution-time {
+    background: linear-gradient(135deg, #ffb3d9, #ff80b5); /* Gradasi lembut untuk waktu eksekusi */
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.execution-time p {
+    font-size: 1.3em;
+    margin: 5px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .table-container {
+        flex-direction: column;
+    }
+
+    .table-wrapper {
+        margin-bottom: 20px;
+    }
+}
