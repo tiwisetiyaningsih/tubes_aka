@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff80b5, #ffb3d9); /* Gradasi pink */
+    background: linear-gradient(135deg, #38B7E1, #ED78AE); /* Gradasi pink */
     color: #333;
     padding: 0;
     margin: 0;
@@ -26,7 +26,7 @@ body {
 header {
     text-align: center;
     margin-bottom: 30px;
-    background: linear-gradient(135deg, #ff80b5, #ffb3d9); /* Gradasi header pink */
+    background: linear-gradient(135deg, #38B7E1, #ED78AE); /* Gradasi header pink */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -70,11 +70,11 @@ textarea {
 textarea:focus {
     background: linear-gradient(135deg, #ffffff, #f1f1f1); /* Fokus gradasi */
     outline: none;
-    border: 1px solid #ff80b5; /* Highlight border dengan warna pink */
+    border: 1px solid #38B7E1; /* Highlight border dengan warna pink */
 }
 
 button {
-    background: linear-gradient(135deg, #ff80b5, #ffb3d9); /* Gradasi pada tombol */
+    background: linear-gradient(135deg, #38B7E1, #ED78AE); /* Gradasi pada tombol */
     color: white;
     padding: 12px 25px;
     border: none;
@@ -86,7 +86,7 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(135deg, #ff66a3, #ff80b5); /* Gradasi lebih gelap saat hover */
+    background: linear-gradient(135deg, #38B7E1, #ED78AE); /* Gradasi lebih gelap saat hover */
 }
 
 button:active {
@@ -95,7 +95,7 @@ button:active {
 
 /* Styling untuk bagian waktu eksekusi */
 .execution-time {
-    background: linear-gradient(135deg, #ffb3d9, #ff80b5); /* Gradasi waktu eksekusi */
+    background: linear-gradient(135deg, #ED78AE, #38B7E1); /* Gradasi waktu eksekusi */
     padding: 15px;
     border-radius: 6px;
     margin-top: 20px;
@@ -148,7 +148,7 @@ th, td {
 }
 
 th {
-    background: linear-gradient(135deg, #ff80b5, #ffb3d9); /* Gradasi pada header tabel */
+    background: linear-gradient(135deg, #38B7E1, #ED78AE); /* Gradasi pada header tabel */
     color: white;
     font-weight: bold;
     border-radius: 6px;
@@ -168,7 +168,7 @@ table th {
 }
 
 .execution-time {
-    background: linear-gradient(135deg, #ffb3d9, #ff80b5); /* Gradasi lembut untuk waktu eksekusi */
+    background: linear-gradient(135deg, #ED78AE, #38B7E1); /* Gradasi lembut untuk waktu eksekusi */
     padding: 15px;
     border-radius: 6px;
     margin-top: 20px;
