@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengklasifikasian Nilai Ujian Mahasiswa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pengklasifikasian Nilai Ujian Mahasiswa</h1>
+            <p>Masukkan data mahasiswa (nama, nilai, passing grade) dan tekan tombol untuk mengurutkan.</p>
+        </header>
+
+        <section class="input-section">
+            <label for="data-input">Masukkan Data Mahasiswa (Format: Nama, Nilai, Passing Grade)</label>
+            <textarea id="data-input" placeholder="Contoh: Alya, 85, 70"></textarea>
+            <button onclick="processData()">Proses Data</button>
+        </section>
+
+        <section class="execution-time">
+            <h3>Waktu Eksekusi Algoritma</h3>
+            <p>Bubble Sort: <span id="bubble-time">0</span> ms</p>
+            <p>Merge Sort: <span id="merge-time">0</span> ms</p>
+        </section>
+
+        <section class="results-section">
+            <h2>Hasil Pengurutan</h2>
+            <div class="table-container">
+                <div class="table-wrapper">
+                    <h3>Bubble Sort Hasil</h3>
+                    <div id="bubble-results">
+                        <p>Hasil Bubble Sort akan ditampilkan di sini setelah proses pengurutan selesai.</p>
+                    </div>
+                </div>
+
+                <div class="table-wrapper">
+                    <h3>Merge Sort Hasil</h3>
+                    <div id="merge-results">
+                        <p>Hasil Merge Sort akan ditampilkan di sini setelah proses pengurutan selesai.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <footer style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #FFF;">
+        Analisis Kompleksitas Algoritma
+    </footer>
+    <footer style="text-align: center; margin-top: 5px; margin-bottom: 20px; font-size: 0.9em; color: #FFF;">
+        🤍🥰 &copy; 2024 @tiwias_aisyqur 🥰🤍
+    </footer>
+</body>
+</html>
